@@ -21,9 +21,11 @@ let image = document.querySelector('.image');
 //   - The `hobby` paragraph.
 //   - The `location` paragraph.
 
-contentButton.addEventListener('click', function() {
+contentButton.addEventListener('mouseover', function() {
 
-
+  myName.innerHTML= "My name is Brenda"
+  myHobby.innerHTML= "I like to listen to Daniel Caesar"
+  myLocation.innerHTML= "I live in New York"
 
 
 
@@ -32,9 +34,12 @@ contentButton.addEventListener('click', function() {
 
 // 3. Add an event listener to the `image1Button`
 // 4. When clicked, it should change the source of `image` to another image URL.
-
-
-
+image1Button.addEventListener('mouseover', function(){
+  image.src="https://chscommunicator.com/wp-content/uploads/2016/11/Screen-Shot-2016-11-09-at-10.53.18-AM-e1479147065403.png"
+})
+image2Button.addEventListener('mouseover', function(){
+  image.src="https://media.pitchfork.com/photos/643569665cec70ae5fd5e87b/master/w_1280%2Cc_limit/Daniel%2520Caesar-%2520Never%2520Enough.jpeg"
+})
 
 
 // 5. Add an event listener to the `image2Button`
